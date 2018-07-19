@@ -108,6 +108,62 @@
     </div>
   </section>
 
+  <section id="job-filter" class="py-2">
+    <div class="container">
+      <div class="row justify-content-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" id="job-filter">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Messages</li>
+            </ol>
+          </nav>
+      </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col col-auto">
+
+            <div class="container">
+              <div class="row">
+            <div class="dropdown mr-3 pb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                Sort By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Name</a>
+              <a class="dropdown-item" href="#">Date</a>
+              <a class="dropdown-item" href="#">Unread</a>
+            </div>
+          </div>
+          <div class="dropdown mr-3 mb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Accending</a>
+              <a class="dropdown-item" href="#">Descending</a>
+            </div>
+          </div>
+          <span data-toggle="modal" data-target="#addJobModal">
+              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
+          </span>
+          </div>
+        </div>
+        </div>
+
+        <div class="col col-auto">
+          <form action="#" method="get" class="form-inline ">
+            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- MESSAGE SECTION -->
   <section id="message-list" class="mb-4 py-4" style="background: #c6c6c6">
     <div class="container">
