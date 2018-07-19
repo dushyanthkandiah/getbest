@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GetBest Sign Up</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="login.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item ">
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item active">
+            <a href="signup.html" class="nav-link">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sign Up SECTION -->
+  <section id="login-screen" class="py-5">
+    <div class="container">
+      <div class="row h-100">
+        <div class="col-md-7 my-auto text-center">
+          <i class="custom-icon-size fa fa-lock mb-2"></i>
+          <h3>It's all about trust</h3>
+          <p>Need a worker? Visit GetBest Need a Job? Visit GetBest</p>
+        </div>
+        <div class="col-md-5 my-auto text-center">
+          <div class="card p-1">
+            <div class="card-body">
+              <form action="#" id="myForm" onsubmit="return validateForm()" class="form-group">
+                <h3 class="text-center">Become a Get Best Member</h3>
+                <hr>
+                <img src="img/person4.jpg" id="signup_image_viewer" name="signup_image_viewer" alt="" class="img-fluid center-block rounded-circle mb-4" style="width:200px;height:200px;object-fit:cover;">
+                <div class="form-group">
+                  <h5 class="display-6">What type of User are you?</h5>
+                  <label class="custom-control custom-radio">
+                    <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="worker">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description"></span>Worker
+                  </label>
+                  <label class="custom-control custom-radio">
+                    <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="customer">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description"></span>Customer
+                  </label>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <input type="text" required placeholder="Full Name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="email" required placeholder="Email" class="form-control">
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" required placeholder="National ID Number" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="tel" required placeholder="Phone Number" class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="input-group  mb-3">
+                  <input type="password" class="form-control" placeholder="Password">
+                  <span class="input-group-btn">
+                    <button class="btn btn-outline-secondary show-hide-password" type="button"><i class="fa fa-eye" style="color:black"></i></button>
+                  </span>
+                </div>
+                <div class="input-group mb-3">
+                  <input type="password" required placeholder="Confirm Password" class="form-control">
+                  <span class="input-group-btn">
+                    <button class="btn btn-outline-secondary show-hide-password" type="button"><i class="fa fa-eye" style="color:black"></i></button>
+                  </span>
+                </div>
+                <div class="form-group">
+                  <label class="custom-file d-block">
+                    <input type="file" id="signup_profile_pic" name="company_logo" accept="image/x-png,image/jpeg" class="custom-file-input">
+                    <span id="signup-profile-pic" class="custom-file-control custom-file-name text-muted"  data-content="Select Only .jpg & .png"></span>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Sign Up" class="btn btn-outline-primary btn-block">
+                </div>
+                <p class="text-center text-danger" id="login_validation_result"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="main-footer" class="bg-dark pt-3">
+
+  </footer>
+
+
+
+  <script>
+    if (typeof module === 'object') {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  <script src="js/profile.js"></script>
+
+  <script>
+    if (window.module) module = window.module;
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

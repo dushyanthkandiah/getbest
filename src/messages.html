@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Messages</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item ">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item active">
+            <a href="messages.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="py-2">
+    <div class="container">
+      <div class="row justify-content-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb" id="job-filter">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Messages</li>
+            </ol>
+          </nav>
+      </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 form-inline">
+          <div class="dropdown mr-3 pb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                Sort By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Name</a>
+              <a class="dropdown-item" href="#">Date</a>
+              <a class="dropdown-item" href="#">Unread</a>
+            </div>
+          </div>
+          <div class="dropdown mr-3 mb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Accending</a>
+              <a class="dropdown-item" href="#">Descending</a>
+            </div>
+          </div>
+          <span data-toggle="modal" data-target="#addJobModal">
+              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
+          </span>
+        </div>
+        <div class="col-md-6 form-inline justify-content-end">
+          <form action="#" method="get" class="form-inline ">
+            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MESSAGE SECTION -->
+  <section id="message-list" class="mb-4 py-4" style="background: #c6c6c6">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <ul class="list-group" id="message_lists">
+            <a href="conversation.html" class="list-group-item list-group-item-action " role="tab">
+              <span class="row py-1" style="margin-top:2px;">
+                <span class="col-md-2">
+                  <img src="img/image1.jpg" alt="" class="img-fluid rounded-circle" style="width:120px;height:120px;object-fit: cover; ">
+                </span>
+                <span class="col-md-10">
+                  <span class="form-inline ">
+                    <label value="Dushyanth" class="h5 mr-auto display-5 myName" id="myName">Dushyanth</label>
+                    <p class="text-muted ">2017-06-17</p>
+                  </span>
+                  <strong>
+                    <p class="text-justify">Lorem ipsum dolor ssit amet, consectetthenderit minus, maxime ipsa quasi, dignissimos consequatur dicta? Possimus magnam in consequatur eum delectus culpa ratione?</p>
+                  </strong>
+                </span>
+              </span>
+            </a>
+            <a href="conversation.html" class="list-group-item list-group-item-action " role="tab">
+              <span class="row py-1" style="margin-top:2px;">
+                <span class="col-md-2">
+                  <img src="img/image2.jpg" alt="" class="img-fluid rounded-circle" style="width:120px;height:120px;object-fit: cover; ">
+                </span>
+                <span class="col-md-10">
+                  <span class="form-inline ">
+                    <h5 class="mr-auto display-5 myName" id="myName">Paul Bethany</h5>
+                    <p class="text-muted ">2017-06-17</p>
+                  </span>
+                  <p class="text-justify">Lorem ipsum dolor ssit amet, consectetur adipisicing elit. Excepturi quo laudantium obcaecati maiores voluptate eaque consequuntur iure nostrum temporreprehenderit minus, maxime ipsa quasi, dignissimos consequatur dicta? Possimus magnam in consequatur eum delectus culpa ratione?</p>
+                </span>
+              </span>
+            </a>
+            <a href="conversation.html" class="list-group-item list-group-item-action " role="tab">
+              <span class="row py-1" style="margin-top:2px;">
+                <span class="col-md-2">
+                  <img src="img/image3.jpg" alt="" class="img-fluid rounded-circle" style="width:120px;height:120px;object-fit: cover; ">
+                </span>
+                <span class="col-md-10" >
+                  <span class="form-inline ">
+                    <h5 class="mr-auto display-5 myName" id="">Scarlett</h5>
+                    <p class="text-muted ">2017-06-17</p>
+                  </span>
+                  <p class="text-justify">Lorem ipsum dolor ss it amet, co amet, consectet minus, maxime ipsa quasi, dignissimos consequatur dicta? Possimus magnam in consequatur eum delectur eum delectus culpa ratione?</p>
+                </span>
+              </span>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGINATION SECTION -->
+  <section id="pagination" class="mb-4">
+    <div class="container center">
+      <nav class="">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+          <li class="page-item "><a href="#" class="page-link">2</a></li>
+          <li class="page-item "><a href="#" class="page-link">3</a></li>
+          <li class="page-item "><a href="#" class="page-link">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark pt-3">
+
+  </footer>
+
+<!-- MESSAGE MODAL -->
+<div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="addJobModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header ml-3">
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>Compose a new Message</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      </div>
+      <div class="modal-body">
+        <div class="form pl-3 pr-3 py-2">
+          <div class="form-group">
+            <label for="touser"><strong>To:</strong></label>
+            <select class="custom-select form-control" style="background: none !important;">
+              <option value="1">Sanjana</option>
+              <option value="2">Preethi</option>
+              <option value="3">Asihwarya</option>
+              <option value="1">Princess</option>
+              <option value="1">Emma</option>
+              <option value="1">Emmanuel</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="experience"><strong>Message</strong></label>
+            <div class="input-group">
+              <textarea rows="10" type="text" placeholder="Message" class="form-control"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer" style="margin-bottom:-15px;">
+          <button type="button" class="btn btn-secondary raisedbox-button" data-dismiss="modal">Cancel</button>
+          <button class="btn btn-primary raisedbox-button" type="button">
+            <span>Send
+              <i class="fa fa-send-o"></i>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/messages.js"></script>
+
+<script>
+
+
+
+
+</script>
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>

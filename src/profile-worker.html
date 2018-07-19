@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alexandre</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item ">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="pt-2">
+    <div class="container">
+      <div class="row justify-content-end">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT SECTION -->
+  <section class="py-4" style="background:#eaeaea" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="img/lights.jpg" id="signup_image_viewer" style="width:100%;height:269px;object-fit:cover;" alt="" class="rounded img-fluid center-block ">
+              <div class="mt-2">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><b>Gender</b> <a class="pull-right">Female</a></li>
+                  <li class="list-group-item"><strong>Date of Birth </strong> <a class="pull-right">1996-03-04</a></li>
+                  <li class="list-group-item"><strong>Registered </strong> <a class="pull-right">2008-03-04</a></li>
+                  <li class="list-group-item">
+                    <div class="row justify-content-center">
+                    <div class="col form-inline">
+                      <h6><strong>Available Status</strong></h6>
+                      <label class="switch ml-auto">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card p-3 py-5">
+            <div class="card-body">
+              <h3 class="text-center">Update your information</h3>
+              <hr><br>
+              <form action="" id="myForm" onsubmit="return validateForm()" class="form-group">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" required placeholder="Full Name" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" required placeholder="National ID Number" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="tel" required placeholder="Phone Number" class="form-control">
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select class="custom-select form-control" required aria-required="true" style="background: none !important;">
+                      <option value="" selected>Select Your District*</option>
+                      <option value="Ampara">Ampara</option>
+                      <option value="Anuradhapura">Anuradhapura</option>
+                      <option value="Batticaloa">Batticaloa</option>
+                      <option value="Colombo">Colombo</option>
+                      <option value="Galle">Galle</option>
+                      <option value="Gampaha">Gampaha</option>
+                      <option value="Hambantota">Hambantota</option>
+                      <option value="Jaffna">Jaffna</option>
+                      <option value="Kalutara">Kalutara</option>
+                      <option value="Kandy">Kandy</option>
+                      <option value="Kegalle">Kegalle</option>
+                      <option value="Kilinochchi">Kilinochchi</option>
+                      <option value="Kurunegala">Kurunegala</option>
+                      <option value="Mannar">Mannar</option>
+                      <option value="Matale">Matale</option>
+                      <option value="Matara">Matara</option>
+                      <option value="Moneragala">Moneragala</option>
+                      <option value="Mullaitivu">Mullaitivu</option>
+                      <option value="Nuwara Eliya">Nuwara Eliya</option>
+                      <option value="Polonnaruwa">Polonnaruwa</option>
+                      <option value="Puttalam">Puttalam</option>
+                      <option value="Ratnapura">Ratnapura</option>
+                      <option value="Trincomalee">Trincomalee</option>
+                      <option value="Vavuniya">Vavuniya</option>
+                    </select>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" required placeholder="City/Town" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="input-group  mb-3">
+                      <input type="password" class="form-control" placeholder="Password">
+                      <span class="input-group-btn">
+                        <button class="btn btn-outline-secondary show-hide-password" type="button"><i class="fa fa-eye" style="color:black"></i></button>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="custom-file d-block">
+                        <input type="file" id="signup_profile_pic" name="company_logo" accept="image/x-png,image/jpeg" class="custom-file-input">
+                        <span id="signup-profile-pic" class="custom-file-control custom-file-name text-muted"  data-content="Select Only .jpg & .png"></span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="form-group mt-1">
+                      <input type="submit" required value="Update" class="form-control btn btn-block btn-outline-success">
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="main-footer" class="bg-dark pt-3"> </footer>
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/profile.js"></script>
+
+<script>
+
+</script>
+
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carpenter</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item active">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="py-2">
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="jobs.html">Jobs</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Ceiling</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 form-inline">
+          <div class="dropdown mr-3 pb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                Sort By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Date</a>
+              <a class="dropdown-item" href="#">Ratings</a>
+              <a class="dropdown-item" href="#">Customer Name</a>
+            </div>
+          </div>
+          <div class="dropdown mr-3 mb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Accending</a>
+              <a class="dropdown-item" href="#">Descending</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 form-inline justify-content-end">
+          <form action="#" method="get" class="form-inline ">
+            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- JOB DATA -->
+  <section id="job-list" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="card w-100 m-3">
+          <a href="#job_viewCollapse" data-toggle="collapse" data-parent="#accordion" style="text-decoration: none; color:black">
+            <div class="card-header text-center">
+              <h2>Job Data</h2>
+            </div>
+          </a>
+          <div class="collapse" id="job_viewCollapse">
+            <div class="card-body">
+              <form action="" class="">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="experience"><strong>Which Date You Started this work?</strong></label>
+                      <div class="input-group">
+                        <spen class="input-group-addon">
+                          <i class="fa fa-calendar "></i>
+                        </spen>
+                        <input id="datePicker" class="form-control" type="date">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="experience"><strong>How much you charge for this job?</strong></label>
+                      <div class="input-group ">
+                        <spen class="input-group-addon">Rs.</spen>
+                        <input type="number" value="0.0" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <input type="submit" name="" class="btn btn-primary btn-block raisedbox-button pull-right mb-4" value="Update">
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEEDBACK SECTION -->
+  <section class="py-4 bg-secondary">
+    <div class="container">
+      <div class="row text-center pb-4">
+        <div class="w-100">
+          <h2>Feedbacks</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class=" w-100" id="feedbackdata">
+          <div class="card card-gradient m-3">
+            <div class="card-body ">
+              <div class="row">
+                <div class="rowl col-auto mb-2 ">
+                  <img src="//images.pexels.com/photos/295821/pexels-photo-295821.jpeg?cs=srgb&dl=adolescent-beanie-beautiful-295821.jpg&fm=jpg" alt="asas" class="img-fluid rounded" style="width:100px;height:100px; object-fit:cover;">
+                </div>
+                <div class="col">
+                  <div class="row">
+                    <div class="col align-self-center">
+                      <h6><strong>Email : </strong> drockzz@hotmail.com</h6>
+                      <h6><strong>Name : </strong> Thanos</h6>
+                      <x-star-rating value="2" number="5" style="margin-left:-2px;"></x-star-rating>
+                      <h6 style="font-size: 11px;">Rating: 3/5</h6>
+                    </div>
+                    <div class="col text-right mb-auto ">
+                      <i class="fa fa-clock-o pr-1"></i>2018/06/29
+                    </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer text-justify form-inline">
+              <h6>Feedback:</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque eum ab laudantium voluptas nam esse eligendi repellat nobis, sapiente minus assumenda blanditiis eveniet debitis quod asperiores possimus error minima perspiciatis ipsum qui
+                quam consequatur quidem recusandae maxime totam. Laborum quis soluta id itaque. Neque reiciendis ullam, quas eius qui. Harum sed tempore cum sunt, deserunt deleniti ullam. Sequi facilis, quibusdam voluptatem in dolorum eos voluptatum cum
+                iusto ullam eum dolor expedita, eius sed. Explicabo molestiae, tempora optio consequuntur rerum dolorem sapiente maxime quibusdam deserunt suscipit voluptatibus numquam voluptas veniam aliquid. Saepe ratione aliquid sunt delectus numquam
+                quam repudiandae eveniet libero?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/jobs.js"></script>
+<script src="js/rating_bar.js"></script>
+
+<script>
+  var start = 0;
+  var working = false;
+  var randNumbers = Math.floor((Math.random() * 5) + 1);
+  var feedbackCard;
+
+  for (var i = 0; i < 10; i++) {
+
+    generateRand();
+
+    $('#feedbackdata').append(feedbackCard);
+
+  }
+  start += 10;
+
+  $(window).scroll(function() {
+    if ($(this).scrollTop() + 1 >= $('#feedbackdata').height() - $(window).height()) {
+      if (working == false) {
+        working = true;
+
+        for (var i = 0; i < 10; i++) {
+          generateRand();
+          $('#feedbackdata').append(feedbackCard)
+        }
+        start += 10;
+        setTimeout(function() {
+          working = false;
+        }, 1000)
+      }
+    }
+  });
+
+  function generateRand() {
+    feedbackCard =
+      '<div class="card card-gradient m-3">'+
+        '<div class="card-body ">'+
+          '<div class="row">'+
+            '<div class="rowl col-auto mb-2 ">'+
+              '<img src="//images.pexels.com/photos/295821/pexels-photo-295821.jpeg?cs=srgb&dl=adolescent-beanie-beautiful-295821.jpg&fm=jpg" alt="asas" class="img-fluid rounded" style="width:100px;height:100px; object-fit:cover;">'+
+            '</div>'+
+            '<div class="col">'+
+              '<div class="row">'+
+                '<div class="col align-self-center">'+
+                  '<h6><strong>Email : </strong> drockzz@hotmail.com</h6>'+
+                  '<h6><strong>Name : </strong> Thanos</h6>'+
+                  '<x-star-rating value="' + randNumbers + '" number="5" style="margin-left:-2px;"></x-star-rating>'+
+                  '<h6 style="font-size: 11px;">Rating: 3/5</h6>'+
+                '</div>'+
+                '<div class="col text-right mb-auto ">'+
+                  '<i class="fa fa-clock-o pr-1"></i>' + new Date().toJSON().slice(0, 10).replace(/-/g, '/') +
+                '</div>'+
+                '</div>'+
+            '</div>'+
+          '</div>'+
+        '</div>'+
+        '<div class="card-footer text-justify form-inline">'+
+          '<h6>Feedback:</h6>'+
+          '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus tenetur earum dolorum saepe dolorem natus expedita perspiciatis commodi soluta, porro voluptas rerum, debitis quos. Porro eligendi iste ratione, adipisci. Repudiandae laborum quam eligendi itaque, sapiente, quidem aliquid animi. Quo provident doloremque facilis voluptatum, voluptate cumque voluptates blanditiis commodi quasi tempore fugiat, quidem iste maiores eveniet asperiores possimus aliquid laudantium corporis et soluta vel ipsam eum accusamus! Quidem dolor, illo aliquid, veritatis nesciunt facilis est eveniet.</p>'+
+        '</div>'+
+      '</div>';
+
+    randNumbers = Math.floor((Math.random() * 5) + 1);
+  }
+</script>
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>

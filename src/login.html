@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>GetBest Login</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="login.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="login.html" class="nav-link">Login</a>
+          </li>
+          <li class="nav-item">
+            <a href="signup.html" class="nav-link">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- LOGIN SECTION -->
+  <section id="login-screen" class="py-5">
+    <div class="container">
+      <div class="row h-100">
+        <div class="col-md-7 my-auto text-center">
+          <i class="custom-icon-size fa fa-lock mb-2"></i>
+          <h3>It's all about trust</h3>
+          <p>Need a worker? Visit GetBest <br> Need a Job? Visit GetBest</p>
+        </div>
+        <div class="col-md-5 my-auto text-center" id="login-controls">
+
+          <div class="card p-1" id="tagert-login">
+            <div class="card-body">
+              <form action="#" id="myForm" class="form-group">
+                <h3 class="text-center">Login Information</h3>
+                <hr>
+                <div class="form-group">
+                  <h5 class="display-6">What type of User are you?</h5>
+                  <label class="custom-control custom-radio">
+                  <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="worker">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description"></span>Worker
+                  </label>
+                  <label class="custom-control custom-radio">
+                  <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="customer">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description"></span>Customer
+                </label>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <input type="email" required placeholder="Enter Your Email" class="form-control">
+                </div>
+                <div class="input-group  mb-3">
+                  <input type="password" class="form-control" placeholder="Password">
+                  <span class="input-group-btn">
+                    <button class="btn btn-outline-secondary show-hide-password" type="button"><i class="fa fa-eye" style="color:black"></i></button>
+                  </span>
+                </div>
+                <div class="form-group row justify-content-between">
+                  <div class="col-md-6 col-sm-6 text-left">
+                    <label class="custom-control custom-checkbox">
+                    <input id="rememberUser" name="rememberUser" type="checkbox" class="custom-control-input" value="remember">
+                    <span class="custom-control-indicator"></span>
+                    <span class="custom-control-description"></span>Remember
+                  </label>
+                  </div>
+                  <div class="col-md-6 col-sm-6 text-right">
+                    <a href="#" class="" id="btnForgotPassword">Forgot Password?</a>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Sign In" class="btn btn-outline-primary btn-block">
+                </div>
+                <p class="text-center text-danger" id="login_validation_result"></p>
+              </form>
+            </div>
+          </div>
+
+          <div class="card p-1" id="tagert-reset">
+            <div class="card-body">
+              <form action="#" id="myForm" onsubmit="return validateForm()" class="form-group">
+                <div class="row">
+                <div class="col-md-1 col-sm-1" id="btnGoBack" style="margin-top:4px;">
+                  <i class="fa fa-chevron-left mr-4"  style="font-size:30px; cursor:pointer;"></i>
+                </div>
+                <div class="col-md-10 col-sm-10">
+                  <h3 class="text-center">Reset Password</h3>
+                </div>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <h5 class="display-6">What type of User are you?</h5>
+                  <label class="custom-control custom-radio">
+                  <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="worker">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description"></span>Worker
+                </label>
+                  <label class="custom-control custom-radio">
+                  <input id="selectRadioUser" name="selectRadioUser" type="radio" class="custom-control-input" value="customer">
+                  <span class="custom-control-indicator"></span>
+                  <span class="custom-control-description"></span>Customer
+                </label>
+                </div>
+                <hr>
+                <div class="form-group">
+                  <input type="email" required placeholder="Enter Your Email" class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="submit" value="Send Code" class="btn btn-outline-primary btn-block">
+                </div>
+                <p class="text-center text-danger" id="login_validation_result"></p>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark pt-3">
+
+  </footer>
+
+
+
+  <script>
+    if (typeof module === 'object') {
+      window.module = module;
+      module = undefined;
+    }
+  </script>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+  <script src="js/profile.js"></script>
+
+
+
+  <script>
+    if (window.module) module = window.module;
+  </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>

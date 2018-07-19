@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Posts</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item ">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="py-2">
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Posts</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 form-inline">
+          <div class="dropdown mr-3 pb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                Sort By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Job Type</a>
+              <a class="dropdown-item" href="#">Experience</a>
+              <a class="dropdown-item" href="#">Fee</a>
+            </div>
+          </div>
+          <div class="dropdown mr-3 mb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Accending</a>
+              <a class="dropdown-item" href="#">Descending</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- POSTS LIST -->
+  <section id="job-list" class="" style="background: #e0e0e0">
+    <div class="container">
+      <div class="row pb-3">
+        <div class="card bg-light w-100 mt-3">
+          <div class="card-header bg-light">
+            <div class="container">
+              <div class="row">
+                <img src="img/image2.jpg" class="img-fluid rounded-circle mb-1 mr-3" alt="" style="width:50px; height:50px;object-fit:cover;">
+                <div class="mt-1 ">
+                  <h6 style="margin-bottom: 0px;">Prakash Raj</h6>
+                  <small>prakashraj@gmail.com</small>
+                </div>
+                <div class="ml-auto">
+                  <span>
+                    <i class="fa fa-clock-o"></i>
+                    <small>2017-05-15</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="container">
+                <p style="font-size:17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernatur!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body" style="padding-bottom:0px;">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <a style="cursor:pointer;" class="text-primary h6 commentExpand">
+                  <span>16 Comments</span> <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+            </div>
+            <hr style="margin-bottom:0px;">
+            <div class="container collapse pb-3">
+              <div class="row mt-3">
+                <img src="img/media.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <a href="#" style="font-size:17px;" class="text-primary h6"><b>Justin Langer</b></a> Lorem ipquis, odistiae nisi magni distincmossimos, lorem30 optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <img src="img/laptop.png" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <a href="#" style="font-size:17px;" class="text-primary h6"><b>Sarah Poley</b></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio
+                      consectetur ur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur assumenda sed dolorum officia autem dignissimos, optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <img src="img/person1.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <a href="#" style="font-size:17px;" class="text-primary h6"><b>Elsa</b></a> Lorem ipsu Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur ur adtinctio consectetur assumenda sed
+                      dolorm dd dossimos, lorem30 optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="container">
+              <div class="row align-items-center">
+                <img src="img/image2.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col row-shl">
+                  <input type="text" placeholder="Write a Comment..." class="form-control" style="border-radius:20px; height:40px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-light w-100 mt-3">
+          <div class="card-header bg-light">
+            <div class="container">
+              <div class="row">
+                <img src="img/image2.jpg" class="img-fluid rounded-circle mb-1 mr-3" alt="" style="width:50px; height:50px;object-fit:cover;">
+                <div class="mt-1 ">
+                  <h6 style="margin-bottom: 0px;">Prakash Raj</h6>
+                  <small>prakashraj@gmail.com</small>
+                </div>
+                <div class="ml-auto">
+                  <span>
+                    <i class="fa fa-clock-o"></i>
+                    <small>2017-05-15</small>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-1">
+              <div class="container">
+                <p style="font-size:17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernonsectetur adipisicing
+                  elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernonsectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci
+                  beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernatur!</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body" style="padding-bottom:0px;">
+            <div class="row justify-content-end">
+              <div class="col-auto">
+                <a style="cursor:pointer;" class="text-primary h6 commentExpand">
+                  <span>16 Comments</span> <i class="fa fa-angle-down"></i>
+                </a>
+              </div>
+            </div>
+            <hr style="margin-bottom:0px;">
+            <div class="container collapse pb-3">
+              <div class="row mt-3">
+                <img src="img/media.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <strong style="font-size:17px;" class="text-primary h6">Justin Langer </strong> Lorem ipquis, odistiae nisi magni distincmossimos, lorem30 optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <img src="img/laptop.png" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <strong style="font-size:17px;" class="text-primary h6">Sarah Poley </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio
+                      consectetur ur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur assumenda sed dolorum officia autem dignissimos, optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <img src="img/person1.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col">
+                  <div style="margin-bottom:-17px;">
+                    <p class="bubble">
+                      <strong style="font-size:17px;" class="text-primary h6">Elsa </strong> Lorem ipsu Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur ur adtinctio consectetur assumenda sed
+                      dolorm dd dossimos, lorem30 optio fugit!
+                    </p>
+                  </div>
+                  <small class="ml-3">2018-06-28 1:58 AM</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer bg-light">
+            <div class="container">
+              <div class="row align-items-center">
+                <img src="img/image2.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+                <div class="col row-shl">
+                  <input type="text" placeholder="Write a Comment..." class="form-control" style="border-radius:20px;height:40px;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer id="main-footer" class="bg-dark pt-3">
+
+  </footer>
+
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/posts.js"></script>
+
+<script>
+</script>
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>

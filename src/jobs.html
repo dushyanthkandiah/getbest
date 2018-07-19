@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jobs</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item active">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item">
+            <a href="messages.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="py-2">
+
+    <div class="container">
+      <div class="row justify-content-end">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Jobs</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-md-6 form-inline">
+          <div class="dropdown mr-3 pb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                Sort By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Job Type</a>
+              <a class="dropdown-item" href="#">Experience</a>
+              <a class="dropdown-item" href="#">Fee</a>
+            </div>
+          </div>
+          <div class="dropdown mr-3 mb-2">
+            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+              </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Accending</a>
+              <a class="dropdown-item" href="#">Descending</a>
+            </div>
+          </div>
+          <span data-toggle="modal" data-target="#addJobModal">
+              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
+          </span>
+        </div>
+        <div class="col-md-6 form-inline justify-content-end">
+          <form action="#" method="get" class="form-inline ">
+            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- JOBS LIST -->
+  <section id="list" class="mb-4 pb-4" style="background: #e0e0e0">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-xl-3 col-sm-6 mt-4 ">
+          <div class="card card-gradient raisedbox">
+            <div class="card-body ">
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Job Type</b></div>
+                    <p class="">Ceiling</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Experience</b></div>
+                    <p class="">1Y & 3M</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Fee</b></div>
+                    <p class="">Rs. 13,287</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="btn-group special" role="group">
+                <a href="job-detail.html" class="btn btn-success raisedbox-button">View Details</a>
+                <button class="btn btn-danger raisedbox-button">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-3 col-sm-6 mt-4 ">
+          <div class="card card-gradient raisedbox">
+            <div class="card-body ">
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">
+                  <b>Job Type</b> <a class="pull-right">Ceiling</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Experience</b> <a class="pull-right">1Y & 3M</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Fee</b> <a class="pull-right">Rs. 13,287</a>
+                </li>
+              </ul>
+              <div class="btn-group special" role="group">
+                <a href="job-detail.html" class="btn btn-success raisedbox-button">View Details</a>
+                <button class="btn btn-danger raisedbox-button">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-3 col-sm-6 mt-4">
+          <div class="card card-gradient raisedbox">
+            <div class="card-body">
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">
+                  <b>Job Type</b> <a class="pull-right">Ceiling</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Experience</b> <a class="pull-right">1Y & 3M</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Fee</b> <a class="pull-right">Rs. 13,287</a>
+                </li>
+              </ul>
+              <div class="btn-group special" role="group">
+                <a href="job-detail.html" class="btn btn-success raisedbox-button">View Details</a>
+                <button class="btn btn-danger raisedbox-button">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xl-3 col-sm-6 mt-4">
+          <div class="card card-gradient raisedbox">
+            <div class="card-body">
+              <ul class="list-group list-group-flush mb-3">
+                <li class="list-group-item">
+                  <b>Job Type</b> <a class="pull-right">Ceiling</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Experience</b> <a class="pull-right">1Y & 3M</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Fee</b> <a class="pull-right">Rs. 13,287</a>
+                </li>
+              </ul>
+              <div class="btn-group special" role="group">
+              <a href="job-detail.html" class="btn btn-success raisedbox-button">View Details</a>
+                <button class="btn btn-danger raisedbox-button">Delete</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGINATION SECTION -->
+  <section id="pagination" class="mb-4">
+    <div class="container center">
+      <nav class="">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+          <li class="page-item "><a href="#" class="page-link">2</a></li>
+          <li class="page-item "><a href="#" class="page-link">3</a></li>
+          <li class="page-item "><a href="#" class="page-link">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <footer id="main-footer" class="bg-dark pt-3">
+
+  </footer>
+
+
+  <!-- DETAIL MODAL -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header " style="padding-left:40px;">
+          <h5 class="modal-title" id="exampleModalLongTitle"><b>Job Type</b> - Ceiling</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form p-4">
+            <div class="form-group">
+              <label for="experience"><strong>Which Date You Started this work?</strong></label>
+              <div class="input-group">
+                <spen class="input-group-addon">
+                  <i class="fa fa-calendar "></i>
+                </spen>
+                <input id="datePicker" class="form-control" type="date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience"><strong>How much you charge for this job?</strong></label>
+              <div class="input-group">
+                <spen class="input-group-addon">
+                  Rs.
+                </spen>
+                <input type="number" value="0.0" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" style="margin-bottom:-15px;">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ADD MODAL -->
+
+  <div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="addJobModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header " style="padding-left:40px;">
+          <h5 class="modal-title" id="exampleModalLongTitle"><b>Add a Job</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          <div class="form p-4">
+            <div class="form-group">
+              <label for="experience"><strong>Which Date You Started this work?</strong></label>
+              <div class="input-group">
+                <spen class="input-group-addon">
+                  <i class="fa fa-calendar "></i>
+                </spen>
+                <input id="datePicker" class="form-control" type="date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="experience"><strong>How much you charge for this job?</strong></label>
+              <div class="input-group">
+                <spen class="input-group-addon">
+                  Rs.
+                </spen>
+                <input type="number" value="0.0" min="0" step="1" data-number-to-fixed="2" data-number-stepfactor="100" class="form-control currency" id="c2" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer" style="margin-bottom:-15px;">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/jobs.js"></script>
+
+<script>
+</script>
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>
