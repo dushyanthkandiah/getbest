@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Messages</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Get <strong>BEST</strong></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="posts-worker.html" class="nav-link">Posts</a>
+          </li>
+          <li class="nav-item ">
+            <a href="jobs.html" class="nav-link">Jobs</a>
+          </li>
+          <li class="nav-item active">
+            <a href="messages-workers.html" class="nav-link">Messages <span class="badge badge-danger">4</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link popper" data-toggle="popover" style="cursor:pointer">Profile</a>
+            <div class="popper-content" style="display: none;">
+              <ul class="list-group text-center list-group-flush ">
+                <li class="list-group-item">
+                  <a href="profile-worker.html">
+                  <img src="img/image1.jpg" class="rounded-circle mb-3 img img-fluid" alt="User Image" style="height:100px;width:100px; margin-left:50px;margin-right:50px;">
+                  </a>
+                  <p style="margin-bottom:1px;">Alexandre Pierce</p>
+                  <small>Member since Nov. 2012</small>
+                </li>
+                <li class="list-group-item ">
+                  <a href="login.html" class="btn btn-danger btn-block raisedbox-button mt-1">Log Out</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- FILTERS -->
+
+  <section id="job-filter" class="pt-2">
+    <div class="container">
+      <div class="row justify-content-end">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a href="messages-customers.html">Messages</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Conversation</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAT SECTION -->
+  <section id="message-list" class="py-4" style="background: #c6c6c6">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header _3AwwN ">
+              <div class="row align-items-center">
+                <img src="img/image2.jpg" class="img-fluid rounded-circle ml-3" alt="" style="width:50px; height:50px; object-fit:cover">
+                <div class="col " style="height: 50px;">
+                  <h5><small><strong>Dushyanth</strong></small></h5>
+                  <p style="margin-top:-10px;"><small>Online</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body my-panel" id="chatBox">
+              <div class="section-one scrollbar pl-5 pr-5 py-3" id="style-2">
+                <!-- <div class="row">
+                  <div class="bubble-left round">
+                    <div class="talktext">
+                      <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
+                      <small class="pull-right mb-1">2018-06-28 1:58 AM</small>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Type a Message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append ml-2">
+                  <button class="btn btn-primary raisedbox-button" type="button">
+                    <span>
+                      <i class="fa fa-send-o"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--
+  <style>
+  #chatBox {width:100%;height:802px;border: 1px solid;overflow-y: auto}
+  #loader {display:none;}
+  .messages{min-height:40px;border-bottom:1px solid #1f1f1f;}
+  .dates {font-size:9px;color:#1f1f1f;} */
+  </style>
+
+
+  <img id="loader" src='http://opengraphicdesign.com/wp-content/uploads/2009/01/loader64.gif'>
+
+<div id="chatBox">
+    <div class='inner'>
+
+    </div>
+        </div>  -->
+
+
+
+  <footer id="main-footer" class="bg-dark pt-3"> </footer>
+</body>
+
+
+<script>
+  if (typeof module === 'object') {
+    window.module = module;
+    module = undefined;
+  }
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+<script src="js/messages.js"></script>
+
+<script>
+var count = 0;
+var randNumbers = Math.floor((Math.random() * 2) + 1);
+  var chatMsg;
+
+// GENERATE FIRST BATCH OF MESSAGES
+//This will be where you do your SQL and PHP first
+for(var i=0;i<6;i++){
+  generateRand();
+    $('#style-2').prepend(
+      chatMsg + count);
+    count++;
+}
+
+
+$("#style-2").scrollTop($("#style-2")[0].scrollHeight);
+
+// Assign scroll function to chatBox DIV
+$('#style-2').scroll(function(){
+    if ($('#style-2').scrollTop() == 0){
+
+      // Youd do Something like this here
+      // Query the server and paginate results
+      // Then prepend
+      /*  $.ajax({
+            url:'getmessages.php',
+            dataType:'html',
+            success:function(data){
+                $('.inner').prepend(data);
+            };
+        });*/
+        //BUT FOR EXAMPLE PURPOSES......
+        // We'll just simulate generation on server
+
+
+        //Simulate server delay;
+        setTimeout(function(){
+        // Simulate retrieving 4 messages
+        for(var i=0;i<5;i++){
+          generateRand();
+          $('#style-2').prepend(
+            chatMsg + count);
+          count++;
+
+        }
+            // Hide loader on success
+            // Reset scroll
+            $('#style-2').scrollTop(30);
+        },780);
+    }
+});
+
+function generateRand() {
+  var senderBubble = (randNumbers == 1) ? 'left' : 'right';
+  var senderOrientation = (randNumbers == 1) ? ' ' : 'justify-content-end';
+  chatMsg =
+  '<div class="row ' + senderOrientation + '">'+
+  '<div class="bubble-'+senderBubble+' round">'+
+  '<div class="talktext">'+
+    '<p>This one a left, flush at the top by using .tri-right and .left-top to specify the location.</p>'+
+    '<small class="pull-right mb-1">2018-06-28 1:58 AM</small>'+
+  '</div>'+
+'</div>' +
+'</div>';
+
+  randNumbers = Math.floor((Math.random() * 2) + 1);
+}
+
+</script>
+
+
+<script>
+  if (window.module) module = window.module;
+</script>
+
+
+
+
+
+
+
+
+
+</html>
