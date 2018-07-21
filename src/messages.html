@@ -58,109 +58,61 @@
 
   <!-- FILTERS -->
 
+
   <section id="job-filter" class="py-2">
     <div class="container">
       <div class="row justify-content-end">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb" id="job-filter">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Messages</li>
-            </ol>
-          </nav>
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb" id="job-filter">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Messages</li>
+          </ol>
+        </nav>
       </div>
       <div class="row">
         <div class="container">
           <hr class="w-100" style="margin-top:-20px;">
         </div>
       </div>
-      <div class="row ">
-        <div class="col-md-6 form-inline">
-          <div class="dropdown mr-3 pb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
-                Sort By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Name</a>
-              <a class="dropdown-item" href="#">Date</a>
-              <a class="dropdown-item" href="#">Unread</a>
-            </div>
-          </div>
-          <div class="dropdown mr-3 mb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+      <nav id="custom-nav" class="row navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span data-toggle="modal" data-target="#addJobModal">
+          <button class="btn btn-primary raisedbox-button mb-2 mr-3" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto  mt-lg-0">
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                  Sort By
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Name</a>
+                  <a class="dropdown-item" href="#">Date</a>
+                  <a class="dropdown-item" href="#">Unread</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3 ">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
                 Order By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Accending</a>
-              <a class="dropdown-item" href="#">Descending</a>
-            </div>
-          </div>
-          <span data-toggle="modal" data-target="#addJobModal">
-              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
-          </span>
-        </div>
-        <div class="col-md-6 form-inline justify-content-end">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Accending</a>
+                  <a class="dropdown-item" href="#">Descending</a>
+                </div>
+              </div>
+            </li>
+          </ul>
           <form action="#" method="get" class="form-inline ">
             <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
           </form>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="job-filter" class="py-2">
-    <div class="container">
-      <div class="row justify-content-end">
-          <nav aria-label="breadcrumb">
-            <ol class="breadcrumb" id="job-filter">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Messages</li>
-            </ol>
-          </nav>
-      </div>
-      <div class="row">
-        <div class="container">
-          <hr class="w-100" style="margin-top:-20px;">
-        </div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="col col-auto">
-
-            <div class="container">
-              <div class="row">
-            <div class="dropdown mr-3 pb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
-                Sort By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Name</a>
-              <a class="dropdown-item" href="#">Date</a>
-              <a class="dropdown-item" href="#">Unread</a>
-            </div>
-          </div>
-          <div class="dropdown mr-3 mb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
-                Order By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Accending</a>
-              <a class="dropdown-item" href="#">Descending</a>
-            </div>
-          </div>
-          <span data-toggle="modal" data-target="#addJobModal">
-              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
-          </span>
-          </div>
-        </div>
-        </div>
-
-        <div class="col col-auto">
-          <form action="#" method="get" class="form-inline ">
-            <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
-          </form>
-        </div>
-      </div>
+      </nav>
     </div>
   </section>
 
@@ -239,21 +191,21 @@
 
   </footer>
 
-<!-- MESSAGE MODAL -->
-<div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="addJobModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header ml-3">
-        <h5 class="modal-title" id="exampleModalLongTitle"><b>Compose a new Message</b></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <!-- MESSAGE MODAL -->
+  <div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="addJobModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ml-3">
+          <h5 class="modal-title" id="exampleModalLongTitle"><b>Compose a new Message</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-      </div>
-      <div class="modal-body">
-        <div class="form pl-3 pr-3 py-2">
-          <div class="form-group">
-            <label for="touser"><strong>To:</strong></label>
-            <select class="custom-select form-control" style="background: none !important;">
+        </div>
+        <div class="modal-body">
+          <div class="form pl-3 pr-3 py-2">
+            <div class="form-group">
+              <label for="touser"><strong>To:</strong></label>
+              <select class="custom-select form-control" style="background: none !important;">
               <option value="1">Sanjana</option>
               <option value="2">Preethi</option>
               <option value="3">Asihwarya</option>
@@ -261,26 +213,26 @@
               <option value="1">Emma</option>
               <option value="1">Emmanuel</option>
             </select>
-          </div>
-          <div class="form-group">
-            <label for="experience"><strong>Message</strong></label>
-            <div class="input-group">
-              <textarea rows="10" type="text" placeholder="Message" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="experience"><strong>Message</strong></label>
+              <div class="input-group">
+                <textarea rows="10" type="text" placeholder="Message" class="form-control"></textarea>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="modal-footer" style="margin-bottom:-15px;">
-          <button type="button" class="btn btn-secondary raisedbox-button" data-dismiss="modal">Cancel</button>
-          <button class="btn btn-primary raisedbox-button" type="button">
+          <div class="modal-footer" style="margin-bottom:-15px;">
+            <button type="button" class="btn btn-secondary raisedbox-button" data-dismiss="modal">Cancel</button>
+            <button class="btn btn-primary raisedbox-button" type="button">
             <span>Send
               <i class="fa fa-send-o"></i>
             </span>
           </button>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
 
 </body>
@@ -301,10 +253,6 @@
 <script src="js/messages.js"></script>
 
 <script>
-
-
-
-
 </script>
 
 <script>

@@ -83,6 +83,11 @@ body {
   background-color: #eaeaea
 }
 
+#custom-nav.navbar-light .navbar-toggler-icon {
+  background-image: url("expand-button.png");
+  background-size: 75%;
+}
+
 .modal-dialog {
   min-height: calc(100vh - 60px);
   display: flex;

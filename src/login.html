@@ -90,14 +90,15 @@
                 <div class="form-group">
                   <input type="submit" value="Sign In" class="btn btn-outline-primary btn-block">
                 </div>
-                <p class="text-center text-danger" id="login_validation_result"></p>
+                <div class="alert alert-danger" role="alert" id="login_validation_result">
+                </div>
               </form>
             </div>
           </div>
 
           <div class="card p-1" id="tagert-reset">
             <div class="card-body">
-              <form action="#" id="myForm" onsubmit="return validateForm()" class="form-group">
+              <form action="#" id="myFormReset" class="form-group">
                 <div class="row">
                 <div class="col-md-1 col-sm-1" id="btnGoBack" style="margin-top:4px;">
                   <i class="fa fa-chevron-left mr-4"  style="font-size:30px; cursor:pointer;"></i>
@@ -127,7 +128,8 @@
                 <div class="form-group">
                   <input type="submit" value="Send Code" class="btn btn-outline-primary btn-block">
                 </div>
-                <p class="text-center text-danger" id="login_validation_result"></p>
+                <div class="alert alert-danger" role="alert" id="reset_validation_result">
+                </div>
               </form>
             </div>
           </div>

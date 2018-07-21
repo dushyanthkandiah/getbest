@@ -59,7 +59,6 @@
   <!-- FILTERS -->
 
   <section id="job-filter" class="py-2">
-
     <div class="container">
       <div class="row justify-content-end">
         <nav aria-label="breadcrumb">
@@ -74,40 +73,46 @@
           <hr class="w-100" style="margin-top:-20px;">
         </div>
       </div>
-      <div class="row ">
-        <div class="col-md-6 form-inline">
-          <div class="dropdown mr-3 pb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
-                Sort By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Job Type</a>
-              <a class="dropdown-item" href="#">Experience</a>
-              <a class="dropdown-item" href="#">Fee</a>
-            </div>
-          </div>
-          <div class="dropdown mr-3 mb-2">
-            <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+      <nav id="custom-nav" class="row navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span data-toggle="modal" data-target="#addJobModal">
+          <button class="btn btn-primary raisedbox-button mb-2 mr-3" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto  mt-lg-0">
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                  Sort By
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Job Type</a>
+                  <a class="dropdown-item" href="#">Experience</a>
+                  <a class="dropdown-item" href="#">Fee</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3 ">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
                 Order By
-              </a>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item" href="#">Accending</a>
-              <a class="dropdown-item" href="#">Descending</a>
-            </div>
-          </div>
-          <span data-toggle="modal" data-target="#addJobModal">
-              <button class="btn btn-primary raisedbox-button mb-2" data-toggle="tooltip" title="Add a New Job" ><i class="fa fa-plus"></i></button>
-          </span>
-        </div>
-        <div class="col-md-6 form-inline justify-content-end">
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Accending</a>
+                  <a class="dropdown-item" href="#">Descending</a>
+                </div>
+              </div>
+            </li>
+          </ul>
           <form action="#" method="get" class="form-inline ">
             <input class="form-control mr-sm-2 mb-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-primary raisedbox-button mb-2" type="submit" data-toggle="tooltip" title="Search">Search</button>
           </form>
         </div>
-      </div>
+      </nav>
     </div>
-
   </section>
 
 

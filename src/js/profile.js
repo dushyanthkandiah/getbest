@@ -56,12 +56,15 @@ $(document).ready(function() {
 
   });
 
+var result = $("#login_validation_result").hide();
+
   $( "#myForm" ).submit(function( event ) {
     var selectRadioUser = document.forms["myForm"]["selectRadioUser"].value;
-    var result = document.getElementById("login_validation_result");
+
 
     if (selectRadioUser == "") {
-      result.innerHTML = "Please Select Your User type";
+      result.show();
+      result.html("Please Select Your User type.");
     } else {
       result.innerHTML = "";
       if(selectRadioUser == "worker"){
@@ -73,7 +76,31 @@ $(document).ready(function() {
     event.preventDefault();
   });
 
+  var resetResult = $("#reset_validation_result").hide();
+
+    $( " #myFormReset" ).submit(function( event ) {
+      var selectRadioUser =  document.forms["myFormReset"]["selectRadioUser"].value;
+
+
+      if (selectRadioUser == "") {
+        resetResult.show();
+        resetResult.html("Please Select Your User type.");
+      } else {
+        resetResult.html("");
+        if(selectRadioUser == "worker"){
+    //      window.location.href = "posts-worker.html";
+        }else{
+      //    window.location.href = "workers.html";
+        }
+      }
+      event.preventDefault();
+    });
+
+  // ****************************JQEURY ENDS HERE**********************************
+
 });
+
+
 
 document.getElementById('signup_profile_pic').onchange = function(evt) {
   var tgt = evt.target || window.event.srcElement,
