@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="background: #e0e0e0; ">
+<body class="bg-secondary" >
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
@@ -58,8 +58,8 @@
 
   <!-- FILTERS -->
 
-  <section id="job-filter" class="pt-2">
 
+  <section id="job-filter" class="py-2">
     <div class="container">
       <div class="row justify-content-end">
         <nav aria-label="breadcrumb">
@@ -70,8 +70,47 @@
           </ol>
         </nav>
       </div>
+      <div class="row">
+        <div class="container">
+          <hr class="w-100" style="margin-top:-20px;">
+        </div>
+      </div>
+      <nav id="custom-nav" class="row navbar navbar-expand-md navbar-light ">
+        <button class="navbar-toggler mb-2" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <span data-toggle="modal" data-target="#addJobModal">
+          <button class="btn btn-primary raisedbox-button mb-2 mr-3" data-toggle="tooltip" title="Post on Hemsworth's wall" ><i class="fa fa-plus"></i></button>
+        </span>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto  mt-lg-0">
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Sort the Jobs">
+                  Sort By
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Customer Name</a>
+                  <a class="dropdown-item" href="#">Date Posted</a>
+                  <a class="dropdown-item" href="#">Commented</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item mb-2">
+              <div class="dropdown mr-3 ">
+                <a class="btn btn-primary raisedbox-button dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-toggle="tooltip" title="Order the job">
+                Order By
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Accending</a>
+                  <a class="dropdown-item" href="#">Descending</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-
   </section>
 
 
@@ -179,7 +218,7 @@
           </div>
         </div>
         <div class="row" id="jobList">
-          <div class="col-md-6 col-lg-4 ">
+          <div class="col-md-6 col-lg-4">
             <div class="card card-gradient raisedbox mt-4">
               <div class="card-body">
                 <ul class="list-group list-group-flush">
@@ -228,6 +267,104 @@
             </div>
           </div>
         </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card card-gradient raisedbox mt-4">
+            <div class="card-body">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Job Type</b></div>
+                    <p class="">Ceiling</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Experience</b></div>
+                    <p class="">1Y & 3M</p>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row justify-content-between">
+                    <div class="mr-3"><b>Fee</b></div>
+                    <p class="">Rs. 13,287</p>
+                  </div>
+                </li>
+              </ul>
+              <a href="worker-feedbacks.html" class="btn btn-success btn-block raisedbox-button my-4">Others' Feedbacks</a>
+              <div class="row justify-content-center">
+                <a style="cursor:pointer;" class="text-primary h6 commentExpand justify-content-">
+              <span style="user-select: none;">Your feedback</span> <i class="fa fa-angle-down"></i>
+            </a>
+              </div>
+              <div class="collapse">
+                <hr>
+                <div class="row justify-content-center">
+                  <x-star-rating value="2" number="5" style="margin-left:-2px;"></x-star-rating>
+                </div>
+                <div class="form-group">
+                  <textarea type="text" rows="7" placeholder="Message" class="form-control mt-3">Minima laboriosam dicta nesciunt voluptatibus enim temporibus rem illo accusantium similique consectetur.</textarea>
+                </div>
+                <div class="row align-items-center justify-content-between">
+                  <div class="col ml-1 col-auto">
+                    <h6 class="">2/5</h6s>
+                  </div>
+                  <div class="col  col-auto">
+                    <a href="" class="btn btn-primary pull-right raisedbox-button" style="border-radius:50px; width:150%">Submit</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card card-gradient raisedbox mt-4">
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="row justify-content-between">
+                  <div class="mr-3"><b>Job Type</b></div>
+                  <p class="">Ceiling</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row justify-content-between">
+                  <div class="mr-3"><b>Experience</b></div>
+                  <p class="">1Y & 3M</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row justify-content-between">
+                  <div class="mr-3"><b>Fee</b></div>
+                  <p class="">Rs. 13,287</p>
+                </div>
+              </li>
+            </ul>
+            <a href="worker-feedbacks.html" class="btn btn-success btn-block raisedbox-button my-4">Others' Feedbacks</a>
+            <div class="row justify-content-center">
+              <a style="cursor:pointer;" class="text-primary h6 commentExpand justify-content-">
+            <span style="user-select: none;">Your feedback</span> <i class="fa fa-angle-down"></i>
+          </a>
+            </div>
+            <div class="collapse">
+              <hr>
+              <div class="row justify-content-center">
+                <x-star-rating value="2" number="5" style="margin-left:-2px;"></x-star-rating>
+              </div>
+              <div class="form-group">
+                <textarea type="text" rows="7" placeholder="Message" class="form-control mt-3">Minima laboriosam dicta nesciunt voluptatibus enim temporibus rem illo accusantium similique consectetur.</textarea>
+              </div>
+              <div class="row align-items-center justify-content-between">
+                <div class="col ml-1 col-auto">
+                  <h6 class="">2/5</h6s>
+                </div>
+                <div class="col  col-auto">
+                  <a href="" class="btn btn-primary pull-right raisedbox-button" style="border-radius:50px; width:150%">Submit</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </div>
       <div id="pagination" class="pt-3 mt-3">
         <div class="container center">
@@ -249,15 +386,230 @@
 
 
 
-<!-- POSTS SECTION -->
+<!-- POSTS SECTION HEADING -->
 
-<section class="pt-3">
+<section class="bg-light py-4 text-center">
   <div class="container">
-    
+    <h2>POSTS ON TIMELINE</h2>
   </div>
 </section>
 
+
+<!-- POSTS SECTION -->
+
+<section class="py-2">
+  <div class="container">
+    <div class="card bg-light mt-3">
+      <div class="card-header bg-light">
+        <div class="container">
+          <div class="row">
+            <img src="img/image2.jpg" class="img-fluid rounded-circle mb-1 mr-3" alt="" style="width:50px; height:50px;object-fit:cover;">
+            <div class="mt-1 ">
+              <h6 style="margin-bottom: 0px;">Prakash Raj</h6>
+              <small>prakashraj@gmail.com</small>
+            </div>
+            <div class="ml-auto">
+              <span>
+                  <i class="fa fa-clock-o"></i>
+                  <small>2017-05-15</small>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="container">
+            <p style="font-size:17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernatur!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-body" style="padding-bottom:0px;">
+        <div class="row justify-content-end">
+          <div class="col-auto">
+            <a style="cursor:pointer;" class="text-primary h6 commentExpand">
+                <span>16 Comments</span> <i class="fa fa-angle-down"></i>
+              </a>
+          </div>
+        </div>
+        <hr style="margin-bottom:0px;">
+        <div class="container collapse pb-3">
+          <div class="row mt-3">
+            <img src="img/media.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <a href="#" style="font-size:17px;" class="text-primary h6"><b>Justin Langer</b></a> Lorem ipquis, odistiae nisi magni distincmossimos, lorem30 optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <img src="img/laptop.png" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <a href="#" style="font-size:17px;" class="text-primary h6"><b>Sarah Poley</b></a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio
+                  consectetur ur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur assumenda sed dolorum officia autem dignissimos, optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <img src="img/person1.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <a href="#" style="font-size:17px;" class="text-primary h6"><b>Elsa</b></a> Lorem ipsu Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur ur adtinctio consectetur assumenda
+                  sed dolorm dd dossimos, lorem30 optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <img src="img/image2.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col row-shl">
+              <input type="text" placeholder="Write a Comment..." class="form-control" style="border-radius:20px; height:40px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-light w-100 mt-3">
+      <div class="card-header bg-light">
+        <div class="container">
+          <div class="row">
+            <img src="img/image2.jpg" class="img-fluid rounded-circle mb-1 mr-3" alt="" style="width:50px; height:50px;object-fit:cover;">
+            <div class="mt-1 ">
+              <h6 style="margin-bottom: 0px;">Prakash Raj</h6>
+              <small>prakashraj@gmail.com</small>
+            </div>
+            <div class="ml-auto">
+              <span>
+                  <i class="fa fa-clock-o"></i>
+                  <small>2017-05-15</small>
+                </span>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-1">
+          <div class="container">
+            <p style="font-size:17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernonsectetur adipisicing
+              elit. Vel, amet fugit veritatis as eum, adipisci beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernonsectetur adipisicing elit. Vel, amet fugit veritatis as eum, adipisci
+              beatae, tempora qus aperiam? Provident consequuntur repellendus, laboriosam beatae velit neque ut assumenda aspernatur!</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-body" style="padding-bottom:0px;">
+        <div class="row justify-content-end">
+          <div class="col-auto">
+            <a style="cursor:pointer;" class="text-primary h6 commentExpand">
+                <span>16 Comments</span> <i class="fa fa-angle-down"></i>
+              </a>
+          </div>
+        </div>
+        <hr style="margin-bottom:0px;">
+        <div class="container collapse pb-3">
+          <div class="row mt-3">
+            <img src="img/media.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <strong style="font-size:17px;" class="text-primary h6">Justin Langer </strong> Lorem ipquis, odistiae nisi magni distincmossimos, lorem30 optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <img src="img/laptop.png" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <strong style="font-size:17px;" class="text-primary h6">Sarah Poley </strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio
+                  consectetur ur adipisicing elit. Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur assumenda sed dolorum officia autem dignissimos, optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+          <div class="row mt-3">
+            <img src="img/person1.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col">
+              <div style="margin-bottom:-17px;">
+                <p class="bubble">
+                  <strong style="font-size:17px;" class="text-primary h6">Elsa </strong> Lorem ipsu Illum quis, odio voluptates officiis voluptatum fuga aut quibusdam molestiae nisi magni distinctio consectetur ur adtinctio consectetur assumenda sed
+                  dolorm dd dossimos, lorem30 optio fugit!
+                </p>
+              </div>
+              <small class="ml-3">2018-06-28 1:58 AM</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer bg-light">
+        <div class="container">
+          <div class="row align-items-center">
+            <img src="img/image2.jpg" class="img-fluid rounded-circle" alt="" style="width:40px; height:40px;object-fit:cover;">
+            <div class="col row-shl">
+              <input type="text" placeholder="Write a Comment..." class="form-control" style="border-radius:20px;height:40px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <!-- NEW POST MODAL -->
+  <div class="modal fade" id="addJobModal" tabindex="-1" role="dialog" aria-labelledby="addJobModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header ">
+          <h5 class="modal-title" id="exampleModalLongTitle"><b>Compose a new Post</b></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background:#effffd;">
+          <form action="">
+            <div class="form-group">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Write Your Message" rows="8"></textarea>
+            </div>
+            <div class="form-group">
+              <input type="submit" name="Post" value="Post" class="btn btn-primary pull-right w-25">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
 </body>
+
+<style>
+  #addJobModal textarea{
+    border-radius: 10px;
+    border-color: #62dbd0;
+    border-width: 2px;
+  }
+
+  #addJobModal .btn-primary{
+    border-radius:40px;
+  }
+</style>
 
 
 <script>

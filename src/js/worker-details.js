@@ -30,9 +30,12 @@ $(document).ready(function() {
     $(el).parent().next().collapse("toggle");
     el.find('.fa').toggleClass("fa-angle-down fa-angle-up");
   });
+  
+  $(".commentExpand").click(function() {
+    var el = $(this);
 
-
-
-
+    $(el).parent().parent().next().next().collapse("toggle");
+    el.find('.fa').toggleClass("fa-angle-down fa-angle-up");
+  });
 
 });
