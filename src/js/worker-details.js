@@ -25,12 +25,13 @@ $(document).ready(function() {
     }, 1000);
   });
 
-  $(".commentExpand").click(function() {
+
+  $(".feedbackExpand").click(function() {
     var el = $(this);
     $(el).parent().next().collapse("toggle");
     el.find('.fa').toggleClass("fa-angle-down fa-angle-up");
   });
-  
+
   $(".commentExpand").click(function() {
     var el = $(this);
 

@@ -56,8 +56,8 @@ $(document).ready(function() {
 
   });
 
-var result = $("#login_validation_result").hide();
-
+var result = $("#login_validation_result");
+result.hide();
   $( "#myForm" ).submit(function( event ) {
     var selectRadioUser = document.forms["myForm"]["selectRadioUser"].value;
 
@@ -76,8 +76,8 @@ var result = $("#login_validation_result").hide();
     event.preventDefault();
   });
 
-  var resetResult = $("#reset_validation_result").hide();
-
+  var resetResult = $("#reset_validation_result");
+  resetResult.hide();
     $( " #myFormReset" ).submit(function( event ) {
       var selectRadioUser =  document.forms["myFormReset"]["selectRadioUser"].value;
 
@@ -100,23 +100,26 @@ var result = $("#login_validation_result").hide();
 
 });
 
+try {
+  document.getElementById('signup_profile_pic').onchange = function(evt) {
+    var tgt = evt.target || window.event.srcElement,
+      files = tgt.files;
 
-
-document.getElementById('signup_profile_pic').onchange = function(evt) {
-  var tgt = evt.target || window.event.srcElement,
-    files = tgt.files;
-
-  // FileReader support
-  if (FileReader && files && files.length) {
-    var fr = new FileReader();
-    fr.onload = function() {
-      document.getElementById('signup_image_viewer').src = fr.result;
+    // FileReader support
+    if (FileReader && files && files.length) {
+      var fr = new FileReader();
+      fr.onload = function() {
+        document.getElementById('signup_image_viewer').src = fr.result;
+      }
+      fr.readAsDataURL(files[0]);
     }
-    fr.readAsDataURL(files[0]);
+    // Not supported
+    else {
+      // fallback -- perhaps submit the input to an iframe and temporarily store
+      // them on the server until the user's session ends.
+    }
   }
-  // Not supported
-  else {
-    // fallback -- perhaps submit the input to an iframe and temporarily store
-    // them on the server until the user's session ends.
-  }
+}
+catch(err) {
+
 }
